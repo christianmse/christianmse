@@ -41,11 +41,11 @@
 | To start an Activity | adb shell am start PACKAGE_NAME/.ACTIVITY_NAME |  |  |
 | To save screenshot | adb shell screencap -p > /mnt/image_name.png |  |  |
 | List of installed packages | adb shell pm list packages --show-versioncode |  |  |
-| To make key event | adb shell input keyevent <val> | Untitled (https://www.notion.so/65cba5db35164cff9f7308aa61c874c9?pvs=21)  |  |
+| To make key event | adb shell input keyevent <val> |  |  |
 | List of running services | adb shell dumpsys activity services |  |  |
 | Get Firmware Version | adb shell getprop http://ro.build.id/ |  |  |
-| Factory Reset | adb shell am broadcast -a com.teevee.ttm -d 'ttm://factoryreset?source=user-local' |  |  |
-| Change Environment | adb shell setprop http://persist.com/.teevee.genesis.environment staging |  |  |
+| Factory Reset | adb shell am broadcast -a <package_name> -d 'ttm://factoryreset?source=user-local' |  |  |
+| Change Environment | adb shell setprop <key> <value> |  |  |
 | ADB multiple devices case | adb -s 192.168.232.2:5555 <command> | Use IP address  |  |
 
 # Logcat Commands Cheat-Sheet
